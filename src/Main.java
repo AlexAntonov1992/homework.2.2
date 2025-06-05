@@ -1,15 +1,27 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        System.out.println("Hello, ");
+        //1
+        int xzz = 1000000;
+        byte xzzz = 127;
+        short xzzzz = 23000;
+        long xzzzzz = 4000777L;
+        float xzzzzzz = 5.25f;
+        double xzzzzzzz = 6.445;
+        System.out.println("Значение переменной int с типом целочисленные равно " + xzz);
+        System.out.println("Значение переменной byte с типом целочисленные равно " + xzzz);
+        System.out.println("Значение переменной short с типом целочисленные равно " + xzzzz);
+        System.out.println("Значение переменной long с типом целочисленные равно " + xzzzzz);
+        System.out.println("Значение переменной float с типом с плавающей точкой равно " + xzzzzzz);
+        System.out.println("Значение переменной double с типом с плавающей точкой равно " + xzzzzzzz);
         //2
-        int a = 57;
-        byte b = 100;
-        short c = -159;
+        float a = 27.12f;
+        long b = 987678965549L;
+        double c = 2.786;
         short d = 569;
-        short r = 27897;
-        long e = 987678965549L;
-        float f = 27.17f;
-        double g = 2.786;
+        short r = -159;
+        short e = 27897;
+        byte f = 67;
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
@@ -17,44 +29,39 @@ public class Main {
         System.out.println(r);
         System.out.println(e);
         System.out.println(f);
-        System.out.println(g);
-//3
-        int lp = 23;
-        int as = 27;
-        int ea = 30;
-        int sheet = 480;
+        //3
+        byte lp = 23;
+        byte as = 27;
+        byte ea = 30;
+        short sheet = 480;
         int st =  sheet / (lp + as + ea);
         System.out.println("На каждого ученика рассчитано " + st + " листов бумаги");
         //4
-        int bottle = 16 / 2;
-        System.out.println(bottle);
-        int xxMin = bottle * 20;
-        System.out.println(xxMin);
+        byte bottle = 16 / 2;
+        System.out.println("За 20 минут, машина произвела " + bottle + " штук бутылок");
+        int xxMin = (bottle * 20);
+        System.out.println("За сутки, машина произвела " + xxMin + " штук бутылок");
         int hour = bottle * 60;
         int day = hour * 24;
-        System.out.println(hour);
+        System.out.println("За 24 часа, машина произвела " + hour + " штук бутылок");
         int friday = day * 3;
-        System.out.println(friday);
+        System.out.println("За 3 дня, машина произвела " + friday + " штук бутылок");
         int month = day * 30;
-        System.out.println(month);
+        System.out.println("За месяц, машина произвела " + month + " штук бутылок");
         //5
-        int paint = 120;
-        int xz = 2 + 4;
+        byte paint = 120;
+        byte xz = 2 + 4;
         int clas = paint / xz;
-        System.out.println(clas);
         int whitePaint = clas * 2;
         int brownPaint = clas * 4;
-        System.out.println(clas);
-        System.out.println(whitePaint);
-        System.out.println(brownPaint);
         System.out.println("В школе, где " + clas + " классов, нужно " + whitePaint + " банок белой краски и " + brownPaint + " банок коричневой краски");
 //6
-        int banana = 5;
-        int milk = 200;
-        int iceCream = 2;
-        int eggs = 4;
+        byte banana = 5;
+        short milk = 200;
+        byte iceCream = 2;
+        byte eggs = 4;
         int weightBanana = banana * 80;
-        int weightMilk = 210;
+        short weightMilk = 210;
         int weightIceCream = iceCream * 100;
         int weightEggs = eggs * 70;
         int totalWeight = weightBanana + weightMilk + weightIceCream + weightEggs;
@@ -62,7 +69,7 @@ public class Main {
         double kg = totalWeight / 1000;
         System.out.println(+ kg + " кг" );
         //7
-        int sport = 7;
+        byte sport = 7;
         int sportKg = sport * 1000;
         int diet = sportKg / 250;
         System.out.println(+ diet + " дней");
@@ -80,8 +87,5 @@ public class Main {
         System.out.println("Маша теперь получает " + maha + " рублей. Годовой доход вырос на " + mahaxx );
         System.out.println("Денис теперь получает " + denis + " рублей. Годовой доход вырос на " + denisxx );
         System.out.println("Кристина теперь получает " + kris + " рублей. Годовой доход вырос на " + krisxx );
-
-
-
     }
 }
